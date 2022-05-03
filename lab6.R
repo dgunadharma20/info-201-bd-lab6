@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-### a4: data manipulation
-
 ## In this problem set we want you to programmatically print meaningful answers where applicable. 
 ## For instance, if the question is What is the binge drinking rate in the US in 2012?, the answer
 ## should be something like this (as a comment):
@@ -21,14 +18,15 @@
 
 ## Print your working directory.
 ## Ensure it is an appropriate project folder
-getwd()
 
 ## load dplyr package 
 library(dplyr)
 
 # Read in `any_drinking.csv` data using relative path
+any_drinking = read.csv("any_drinking.csv")
 
 # Read in `binge.drinking.csv` data using relative path
+binge_drinking = read.csv("binge_drinking.csv")
 
 ### -------------------- Any drinking in 2012 --------------------
 ## For this first section, you will work only with the *any drinking* dataset.
